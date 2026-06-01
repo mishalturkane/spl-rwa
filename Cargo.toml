@@ -1,0 +1,20 @@
+[package]
+name = "spl-rwa"
+version = "0.1.0"
+edition = "2024"
+description = "RWA Token CLI for Solana"
+license = "MIT"
+repository = "https://github.com/mishalturkane/spl-rwa"
+
+
+[[bin]]
+name = "spl-rwa"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+solana-sdk = "3.0.0"
+solana-client = "3.0.0"
+anchor-lang = "1.0.2"
+rwa-program = { path = "../rwa-program/programs/rwa-program" ,  version = "0.1.0"}
+shellexpand = "3"
