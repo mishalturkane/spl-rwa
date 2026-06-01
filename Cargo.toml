@@ -16,5 +16,5 @@ clap = { version = "4", features = ["derive"] }
 solana-sdk = "3.0.0"
 solana-client = "3.0.0"
 anchor-lang = "1.0.2"
-rwa-program = { path = "../rwa-program/programs/rwa-program" ,  version = "0.1.0"}
+rwa-program = { git = "https://github.com/mishalturkane/rwa-program", version = "0.1.0" }
 shellexpand = "3"
